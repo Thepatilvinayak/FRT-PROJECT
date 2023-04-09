@@ -1,0 +1,819 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Set up a basic layout for the page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-color:#131823;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+  }
+  
+  /* Style the header section */
+  header {
+    position: sticky;
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the logo and tagline */
+  header img {
+    height: 200px;
+  }
+  
+  
+  /* Style the navigation links */
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  nav a:hover {
+    color: #ff5500;
+  }
+  
+  /* Footer Styles */
+
+footer {
+  background-color: black;
+  padding: 50px 0;
+  }
+  footer h3{
+    color: white;
+  }
+  
+  .logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 60px;
+  }
+  
+  .logo img {
+  height: 80px;
+  margin-right: 20px;
+  }
+  
+  .links {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 150px;
+  }
+  
+  .links ul {
+  display: flex;
+  justify-content: center;
+  color: #e31258;
+  }
+  
+  .links li {
+  margin: 0 20px;
+  }
+  .links a {
+    color: #e31258;
+  }
+  
+  .social-media {
+  position: fixed;
+  top: 50%;
+  bottom: 100%;
+  right: 1%;
+  transform: translateY(-50%);
+  }
+  
+  .social-media li {
+  display: block;
+  margin: 20px 0;
+  }
+  
+  .social-media a {
+  display: block;
+  font-size: 30px;
+  color: #e31258;
+  transition: all 0.2s ease-in-out;
+  }
+  
+  .social-media a:hover {
+  color: #fff;
+  background-color: #0fcd2e;
+  transform: scale(1.1);
+  }
+  
+  .footer-text p {
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 80px;
+  }
+ /* Media queries */
+@media (max-width: 768px) {
+  .logo img {
+  height: auto;
+  max-width:100px;
+  margin-top: 10px; 
+margin-bottom: 20px;  
+margin-right: 50px;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  align-items: flex-start;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 170px;
+    margin-top: 10px;
+  }
+ 
+  /* nav ul {
+    /* margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    margin-left: 80px;
+  margin-right: auto;
+  } */
+  
+  /* .logo {
+  margin-left: 150px;
+  margin-bottom: 50px;
+  } */
+  .logo img {
+    margin-left: 120px;
+  margin-bottom: 10px;
+    }
+  .logo h3 {
+  display: flex;
+  margin-bottom:10px;
+  }
+  
+  .links {
+  margin-left:auto;
+  display: list-item;
+  vertical-align: middle;
+  }
+  .social-media {
+    position: fixed;
+    top: 50%;
+    bottom:auto;
+    right: 1%;
+    transform: translateY(-50%);
+    }
+  }
+  
+
+  /* css for hero 
+  .hero {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+    
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666666;
+  }
+  
+  .hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff5500;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .hero .cta:hover {
+    background-color: #ff7700;
+  }
+  
+  .hero img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }*/
+  /* Set background color, center contents, and add padding */
+.hero {
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(library.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+    height: 500px;
+    
+    /* Add transition effect for background color */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Change background color on hover */
+  .hero:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Style heading */
+  .hero h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  /* Style paragraph */
+  .hero p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    justify-content: center;
+    display: inline-block;
+  }
+  span{
+    color: #cda10f;
+  }
+  .hero img {
+    max-width: 100%;
+    height: 100px;
+  }
+  
+  /* Style CTA button */
+  .hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff5500;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    
+    /* Add transition effect for background color */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Change CTA button background color on hover and add animation */
+  .hero .cta:hover {
+    background-color: #ff7700;
+    animation: shake 0.5s;
+  }
+  
+  /* Styling for courses section */
+.courses {
+	padding: 80px 0;
+}
+
+.courses h2 {
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 50px;
+	color: #14c3d7;
+}
+
+.courses ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+.courses li {
+	flex-basis: 300px;
+	margin: 30px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease;
+  background-color: rgb(255 255 255);
+}
+
+.courses li:hover {
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+	transform: translateY(-5px);
+}
+
+.courses img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.courses h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: #15bf61;
+}
+
+.courses p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	color: #eeb01e;
+}
+
+.courses a {
+	display: inline-block;
+	background-color: #0088cc;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.courses a:hover {
+	background-color: #005580;
+	cursor: pointer;
+}
+
+.courses a:focus {
+	outline: none;
+}
+
+/* Style for the pricing section 
+.pricing {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  /* Style for the pricing section heading 
+  .pricing h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Style for the pricing section description 
+  .pricing p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+    color: #666;
+  }
+  
+  /* Style for the pricing plan list
+  .pricing ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style for each pricing plan 
+  .pricing li {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    padding: 40px;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Style for each pricing plan heading 
+  .pricing li h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Style for each pricing plan description 
+  .pricing li p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  /* Style for each pricing plan price 
+  .pricing li p:last-child {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Style for the CTA button 
+  .pricing li .cta {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Style for the CTA button on hover 
+  .pricing li .cta:hover {
+    background-color: #555;
+    cursor: pointer;
+  }
+  
+  /* Animation for the pricing plan on hover 
+  .pricing li:hover {
+    transform: translateY(-10px);
+    z-index: 1;
+  }*/
+  /* Style for the pricing section */
+.pricing {
+    padding: 50px 0;
+  }
+  
+  /* Style for the pricing section heading */
+  .pricing h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #14c3d7;
+  }
+  
+  /* Style for the pricing section description */
+  .pricing p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+    color: #2fa224;
+  }
+  
+  /* Style for the pricing plan list */
+  .pricing ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style for each pricing plan */
+  .pricing li {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    padding: 40px;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Style for each pricing plan heading */
+  .pricing li h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Style for each pricing plan description */
+  .pricing li p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  /* Style for each pricing plan price */
+  .pricing li p:last-child {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Style for the CTA button */
+  .pricing li .cta {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Style for the CTA button on hover */
+  .pricing li .cta:hover {
+    background-color: #555;
+    cursor: pointer;
+  }
+  
+  /* Animation for the pricing plan on hover */
+  .pricing li:hover {
+    transform: translateY(-10px);
+    z-index: 1;
+  }
+  
+  /* Colors */
+  .pricing li:nth-child(1) {
+    border-color: #ff5500;
+  }
+  
+  .pricing li:nth-child(2) {
+    border-color: #0072c6;
+  }
+  
+  .pricing li:nth-child(3) {
+    border-color: #ffc000;
+  }
+  
+  .pricing li:nth-child(1) .cta {
+    background-color: #ff5500;
+  }
+  
+  .pricing li:nth-child(2) .cta {
+    background-color: #0072c6;
+  }
+  
+  .pricing li:nth-child(3) .cta {
+    background-color: #ffc000;
+  }
+  @media screen and (max-width: 768px) {
+    /* Style for the pricing plan list */
+    .pricing {
+      padding: 50px 0;
+    }
+    .pricing ul {
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: 50px;
+    }
+    
+    /* Style for each pricing plan */
+    .pricing li {
+    width: 100%;
+    margin: 20px 0;
+    }
+    }
+      /* Set background color and padding for the section 
+section.instructors {
+    background-color: #f2f2f2;
+    padding: 50px;
+  }
+  
+  /* Style the heading 
+  section.instructors h2 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Style the list items 
+  section.instructors ul li {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+  }
+  
+  /* Style the circular images 
+  section.instructors ul li img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the names 
+  section.instructors ul li h3 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the descriptions 
+  section.instructors ul li p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the view profile button 
+  section.instructors ul li a {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Add hover animation to the view profile button 
+  section.instructors ul li a:hover {
+    background-color: #005fa3;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    /* Add your CSS styles here 
+    .pricing li {
+    padding: 20px;
+    margin: 0 10px;
+    }
+    
+    section.instructors ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    }
+    
+    section.instructors ul li a {
+    bottom: -50px;
+    }
+    }*/
+    /* Set background color and padding for the sections */
+section.instructors {
+    padding: 50px;
+    }
+    
+    section.teachers {
+    background-color: #d9d9d9;
+    padding: 50px;
+    }
+    
+    /* Style the headings */
+    section.instructors h2, section.teachers h2 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #14c3d7;
+    }
+    
+    /* Style the list items */
+    section.instructors ul li, section.teachers ul li {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    color: #cda10f;
+    }
+    
+    /* Style the circular images */
+    section.instructors ul li img, section.teachers ul li img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+    }
+    
+    /* Style the names */
+    section.instructors ul li h3, section.teachers ul li h3 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:white;
+    }
+    
+    /* Style the descriptions */
+    section.instructors ul li p, section.teachers ul li p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    }
+    
+    /* Style the view profile button */
+    section.instructors ul li a, section.teachers ul li a {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    
+    /* Add hover animation to the view profile button */
+    section.instructors ul li a:hover, section.teachers ul li a:hover {
+    background-color: #005fa3;
+    cursor: pointer;
+    }@media only screen and (max-width: 768px) {
+      /* Adjust padding for smaller screens */
+      section.instructors {
+        padding: 50px;
+        margin-right: 50px;
+        }
+      /* section.instructors, section.teachers {
+      padding: 30px;
+      } */
+      
+      /* Set width to 100% for smaller screens */
+      section.instructors ul li {
+      width: 100%;
+      margin: 10px 0;
+      margin-bottom: 50px;
+      }
+      
+      /* Adjust font size for smaller screens */
+      section.instructors h2 {
+      font-size: 28px;
+      }
+      
+      section.instructors ul li img {
+      width:250px;
+      height:250px;
+      }
+      
+      /* Adjust button position for smaller screens */
+      section.instructors ul li a {
+      bottom: -40px;
+      
+      }
+      }
+    
+    
+    
+    
+.footer-text {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin: 10px 0 0;
+  }
+  
+ 
+  

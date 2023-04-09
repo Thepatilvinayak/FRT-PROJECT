@@ -1,0 +1,296 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Set up a basic layout for the page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-color:#131823;
+    overflow-x: hidden;
+  }
+  
+  /* Style the header section */
+  header {
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the logo and tagline */
+  header img {
+    height: 200px;
+  }
+  
+  
+  /* Style the navigation links */
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  nav a:hover {
+    color: #ff5500;
+  }
+  
+  /* Footer Styles */
+
+footer {
+  background-color: black;
+  padding: 50px 0;
+  }
+  footer h3{
+    color: white;
+  }
+  
+  .logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 60px;
+  }
+  
+  .logo img {
+  height: 80px;
+  margin-right: 20px;
+  }
+  
+  .links {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 150px;
+  }
+  
+  .links ul {
+  display: flex;
+  justify-content: center;
+  color: #e31258;
+  }
+  
+  .links li {
+  margin: 0 20px;
+  }
+  .links a {
+    color: #e31258;
+  }
+  
+  .social-media {
+  position: fixed;
+  top: 50%;
+  bottom: 100%;
+  right: 1%;
+  transform: translateY(-50%);
+  }
+  
+  .social-media li {
+  display: block;
+  margin: 20px 0;
+  }
+  
+  .social-media a {
+  display: block;
+  font-size: 30px;
+  color: #e31258;
+  transition: all 0.2s ease-in-out;
+  }
+  
+  .social-media a:hover {
+  color: #fff;
+  background-color: #0fcd2e;
+  transform: scale(1.1);
+  }
+  
+  .footer-text p {
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 80px;
+  }
+  .footer-text {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin: 10px 0 0;
+  }
+  /* Media queries */
+@media (max-width: 768px) {
+  .logo img {
+  height: auto;
+  max-width:100px;
+  margin-top: 10px; 
+margin-bottom: 20px;  
+margin-right: 50px;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  align-items: flex-start;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 170px;
+    margin-top: 10px;
+  }
+ 
+  /* nav ul {
+    /* margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    margin-left: 80px;
+  margin-right: auto;
+  } */
+  
+  /* .logo {
+  margin-left: 150px;
+  margin-bottom: 50px;
+  } */
+  .logo img {
+    margin-left: 120px;
+  margin-bottom: 10px;
+    }
+  .logo h3 {
+  display: flex;
+  margin-bottom:10px;
+  }
+  
+  .links {
+  margin-left:auto;
+  display: list-item;
+  vertical-align: middle;
+  }
+  .social-media {
+    position: fixed;
+    top: 50%;
+    bottom:auto;
+    right: 1%;
+    transform: translateY(-50%);
+    }
+  }
+  #privacy-policy-title {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    margin-left: 100px;
+    margin-right: auto;
+  }
+  
+  /* Styles for p element */
+  #effective-date {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 32px;
+    margin-left: 100px;
+    margin-right: auto;
+  }
+  /* Styling for the "Who We Are" section */
+#who-we-are-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: white; /* Dark blue color */
+}
+
+#who-we-are-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: white; /* Dark gray color */
+}
+
+/* Styling for the "What We Offer" section */
+#what-we-offer-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: white; /* Dark blue color */
+}
+
+#what-we-offer-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: white; /* Dark gray color */
+}
+
+/* Styling for the "Why Choose Us" section */
+#why-choose-us-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: white; /* Dark blue color */
+}
+
+#why-choose-us-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: white; /* Dark gray color */
+}
+
+/* Styling for the "Contact Us" section */
+#contact-us-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: white; /* Dark blue color */
+}
+
+#contact-us-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: white; /* Dark gray color */
+}
+
+#contact-us-link {
+  color: #19b2bd; /* Dark blue color */
+}
+
+#contact-form-link {
+  color: #19b2bd; /* Dark blue color */
+}
+
+/* Styling for the "main" tag */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  /*background-color: #f2f2f2;  Light gray color */
+  border: 1px solid #ccc; /* Gray color */
+  border-radius: 5px;
+}
